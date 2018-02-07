@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background640"
+    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+    tools:context="com.coursera.welcome.MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTint="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:labelFor="@+id/layout"
+        android:scrollHorizontally="false"
+        android:text="@string/app_label"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textIsSelectable="false"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="83dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTint="@android:color/background_light"
+        android:elevation="0dp"
+        android:foregroundTint="@android:color/background_light"
+        android:labelFor="@+id/editText"
+        android:singleLine="false"
+        android:text="@string/app_button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+</RelativeLayout>
